@@ -3,10 +3,7 @@ pragma solidity ^0.6.0;
 contract MyToken{
     uint32 maxLimit = 10000000;
     string tokenName = "ApeToken";
-    struct token{
-        uint32 decimals;
-        string name;
-    }
+    string symbol = "FAT";
     mapping(address => uint256) ownerBalance;  // Storing how much FAT you have
     mapping(address => address[]) ownerApprovedAddress; // Storing who can transfer your tokens for you
 
