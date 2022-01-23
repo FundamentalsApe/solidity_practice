@@ -7,7 +7,7 @@ contract MyToken{
     mapping(address => uint256) ownerBalance;  // Storing how much FAT you have
     mapping(address => address[]) ownerApprovedAddress; // Storing who can transfer your tokens for you
 
-    function _transfer(address _from, address _to, uint amount) internal{
+    function transfer(address _from, address _to, uint amount) public{
         bool approved = false;
         for(uint i; i<ownerApprovedAddress[_from].length;i++){
             if(msg.sender == ownerApprovedAddress[_from][i]){
