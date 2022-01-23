@@ -25,7 +25,7 @@ contract MyToken{
         ownerApprovedAddress[_from].push(_to);
     }
 
-    function balanceOf(address owner) public view returns(uint) {
+    function getBalance(address owner) public view returns(uint) {
         return ownerBalance[owner];
     }
 }
