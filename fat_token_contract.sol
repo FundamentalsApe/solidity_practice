@@ -16,7 +16,7 @@ contract FAToken {
     string public symbol = "FAT";
     string public name = "Fundamentals Ape Token";
     uint256 public decimals = "18";
-    uint256 public totalSupply = 1000000;
+    uint256 public _totalSupply = 1000000;
 
     mapping(address => uint256) ownerBalance;  // Storing how much FAT you have
     mapping(address => mapping(address => uint256)) allowed; // Storing who can transfer your tokens for you
